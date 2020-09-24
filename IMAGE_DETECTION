@@ -1,0 +1,55 @@
+LOAD IMAGE USING OPEN_CV:
+
+import cv2
+# Coloured image
+img = cv2.imread ("C:\\Users\\Laptop\\Pictures\\pollution.jpg", 1) 
+# Black and white (gray scale)
+img2= cv2.imread ("C:\\Users\\Laptop\\Pictures\\pollution.jpg", 0)
+print(img) || # print(img2)
+print(type(img))
+print(img.shape)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+DISPLAYING THE IMAGE:
+
+import cv2
+img = cv2.imread("C:\\Users\\Laptop\\Pictures\\pollution.jpg", 0)
+cv2.imshow("POLLUTION",img)
+cv2.waitKey(0) || # cv2.waitKet(2000)
+cv2.destroyAllWindows()
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+RESIZING THE IMAGE:
+
+import cv2
+img = cv2.imread("C:\\Users\\Laptop\\Pictures\\pollution.jpg", 0)
+resized = cv2.resize(img,(int(img.shape[1]/2),int(img.shape[0]/2)))  || # resized = cv2.resize(img,(650,500))
+cv2.imshow("AIR",resized)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+NOTES:
+1. imread - this function helps to read the image.(3D array for 1 and 2D aaray for 0)
+2. '1' is used for coloured and '0' is used for black and white.
+3. Python stores the images as a NUMPY array.
+4. shape - to see the shape/size of the image.(3 is for coloured image [eg: 600,500,3] and nothing for gray scale [eg: 600,500]
+5. 2000 = 2000 miliseconds
+6. imshow - is for display of function(image in this case)./ opens a window to display the image.
+7. to resize the image in a symmetrical manner - decrease size "/ by 2" and increase size "* by 2".
+8. waitKey(0) - wait until the user presses a key. 
+9. destroyAllWindow - closes the window based on wait for key pattern.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
