@@ -2,6 +2,7 @@
 Introduction to OpenCV with a basic project using Python
 
 INTRODUCTION
+
 WHAT IS COMPUTER VISION?
 
 Computer vision is an interdisciplinary field that deals with how computers can gain a high-level understanding from digital images or videos. 
@@ -17,6 +18,7 @@ So if it is said that the size of an image is 500*500 and it's a coloured image,
 One thing to note is that for greyscale or of a black-and-white image, there is only one channel.
 
 1.) For a coloured image, it will be 3d matrix and for a greyscale image it will be 2d matrix
+
 2.) To calculate the number of pixels - just multiply no. of rows, no. of columns and the number of channels.
 
 WHAT IS OpenCV?
