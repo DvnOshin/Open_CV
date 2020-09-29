@@ -39,17 +39,3 @@ NOTES:
 7. to resize the image in a symmetrical manner - decrease size "/ by 2" and increase size "* by 2".
 8. waitKey(0) - wait until the user presses a key. 
 9. destroyAllWindow - closes the window based on wait for key pattern.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
